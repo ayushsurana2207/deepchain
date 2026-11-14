@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Palette: see Decision.md "terminal amber + signal red" */
+@theme {
+  --color-paper: #F7F6F2;
+  --color-card: #FFFFFF;
+  --color-line: #E6E3DC;
+  --color-line-strong: #D6D2C8;
+  --color-ink: #1C1B18;
+  --color-ink-2: #2A2925;
+  --color-ink-line: #45423B;
+  --color-muted: #5C5850;
+  --color-muted-on-ink: #A8A398;
+  --color-amber: #C98A1B;
+  --color-amber-ink: #8A5A00;
+  --color-amber-tint: #FBF3E2;
+  --color-amber-line: #E9D3A6;
+  --color-risk: #C2341F;
+  --color-risk-ink: #A12A18;
+  --color-risk-tint: #FBEDEA;
+  --color-risk-line: #F2C9C1;
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Animations */
+@keyframes dc-flow { to { stroke-dashoffset: -20; } }
+@keyframes dc-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+@keyframes dc-blink { 50% { opacity: 0; } }
+
+.flow { stroke-dasharray: 6 4; animation: dc-flow 0.8s linear infinite; }
+.pulse { animation: dc-pulse 1.6s ease-in-out infinite; }
+.caret { animation: dc-blink 1s step-end infinite; }
+
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .flow, .pulse, .caret { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * { transition-duration: 0s !important; }
 }

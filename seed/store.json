@@ -1,0 +1,999 @@
+{
+ "tick:MU-HBM3E:hanmi": {
+  "graphKey": "MU-HBM3E",
+  "nodeId": "hanmi",
+  "at": "2026-11-14T20:28:49.737Z",
+  "source": "live",
+  "latencyMs": 5580,
+  "credits": 1,
+  "candidates": 2,
+  "breached": false,
+  "events": [
+   {
+    "url": "https://finance.biggo.com/news/dd3d9dee-491f-4308-8759-bcb13560aa6f",
+    "title": "South Korea's HBM Equipment Patent Battle Over SK Hynix Supply Deals Enters Mediation as Hanmi, Hanwha Face Off \u2014 BigGo Finance",
+    "headline": "Hanmi and Hanwha agree to mediation in TC bonder patent dispute; court hearing postponed",
+    "published": "Tue, 03 Nov 2026 07:56:37 GMT",
+    "about": true,
+    "impact": {
+     "met": false,
+     "quote": "",
+     "verified": false
+    },
+    "credible": {
+     "met": false,
+     "reason": "BigGo Finance is a news aggregator, not a primary source or established trade press."
+    },
+    "recent": {
+     "met": true,
+     "days": 11
+    },
+    "qualified": false
+   },
+   {
+    "url": "https://tavily.com/knowledge/company/fgP7Yb7R6Qkl",
+    "title": "HANMI Semiconductor",
+    "headline": "Company database profile of Hanmi Semiconductor with products and financials",
+    "published": null,
+    "about": true,
+    "impact": {
+     "met": false,
+     "quote": "",
+     "verified": false
+    },
+    "credible": {
+     "met": false,
+     "reason": "Automated company-data aggregator profile, not a primary or established press source."
+    },
+    "recent": {
+     "met": false,
+     "days": null
+    },
+    "qualified": false
+   }
+  ]
+ },
+ "graph:MU-HBM3E": {
+  "key": "MU-HBM3E",
+  "label": "MU \u00b7 HBM3E",
+  "title": "Micron HBM3E memory",
+  "source": "live",
+  "builtAt": "2026-11-14T22:17:13.949Z",
+  "nodes": [
+   {
+    "id": "micron-taiwan",
+    "name": "Micron Taiwan HBM production base",
+    "tier": 1,
+    "country": "TW",
+    "role": "HBM production base",
+    "spof": false,
+    "monitored": false,
+    "news": {
+     "count": 5,
+     "items": [
+      {
+       "title": "High Bandwidth Memory (HBM) Market to Reach USD 69.75",
+       "url": "https://www.globenewswire.com/news-release/2026/11/12/3401813/0/en/high-bandwidth-memory-hbm-market-to-reach-usd-69-75-billion-by-2035-as-ai-accelerators-drive-sold-out-supply-and-the-shift-to-hbm4.html",
+       "published": "Thu, 12 Nov 2026 00:00:00 GMT"
+      },
+      {
+       "title": "Micron Technology stock faces Taiwan expansion test as talks continue",
+       "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/micron-technology-stock-faces-taiwan-expansion-test-as-talks-continue/70487227",
+       "published": "Tue, 10 Nov 2026 22:00:00 GMT"
+      },
+      {
+       "title": "Micron Technology stock rebounds as Taiwan expansion talks continue",
+       "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/micron-technology-stock-rebounds-as-taiwan-expansion-talks-continue/70482096",
+       "published": "Mon, 09 Nov 2026 22:00:00 GMT"
+      },
+      {
+       "title": "NVIDIA\u2019s Development Of Custom HBM Drops Samsung\u2019s And TSMC\u2019s Foundry Rivalry, As Both Manufacturers Join Forces To Develop \u201cBase Die\u201d On The 3nm Node [Update]",
+       "url": "https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die",
+       "published": "Sun, 08 Nov 2026 00:00:00 GMT"
+      },
+      {
+       "title": "Nvidia TSMC partnership \u2014 Is South Korea's Memory Chip Dominance at Risk?",
+       "url": "https://en.koreadaily.com/nvidia-tsmc-partnership-south-korea-memory-risk",
+       "published": "Mon, 09 Nov 2026 20:10:16 GMT"
+      }
+     ],
+     "at": "2026-11-14T22:17:13.949Z"
+    }
+   },
+   {
+    "id": "micron-hiroshima",
+    "name": "Micron Hiroshima fab (Japan)",
+    "tier": 1,
+    "country": "JP",
+    "role": "1-beta DRAM front-end for HBM3E",
+    "spof": false,
+    "monitored": false,
+    "news": {
+     "count": 1,
+     "items": [
+      {
+       "title": "Micron, Inc",
+       "url": "https://tavily.com/knowledge/company/Y44Dg67Qrtvi",
+       "published": null
+      }
+     ],
+     "at": "2026-11-14T22:17:13.949Z"
+    }
+   },
+   {
+    "id": "hanmi",
+    "name": "Hanmi Semiconductor",
+    "tier": 2,
+    "country": "KR",
+    "role": "TC bonders for HBM stacking",
+    "spof": true,
+    "monitored": true,
+    "news": {
+     "count": 2,
+     "items": [
+      {
+       "title": "HANMI Semiconductor",
+       "url": "https://tavily.com/knowledge/company/fgP7Yb7R6Qkl",
+       "published": null
+      },
+      {
+       "title": "[News] Terafab Reportedly Eyes 1M Wafers Monthly by 2032, with 700K for Memory Near Samsung\u2019s Total DRAM Capacity",
+       "url": "https://www.trendforce.com/news/2026/11/09/news-terafab-reportedly-eyes-1m-wafers-monthly-by-2032-with-700k-for-memory-near-samsungs-total-dram-capacity",
+       "published": "Mon, 09 Nov 2026 08:00:00 GMT"
+      }
+     ],
+     "at": "2026-11-14T22:17:13.949Z"
+    }
+   },
+   {
+    "id": "shinkawa",
+    "name": "Shinkawa",
+    "tier": 2,
+    "country": "JP",
+    "role": "TC bonders (8-high HBM)",
+    "spof": false,
+    "monitored": true,
+    "news": {
+     "count": 2,
+     "items": [
+      {
+       "title": "Thermocompression (TC) bonders: Japanese Manufacturers",
+       "url": "https://semirai.com/en/equipment/thermocompression-bonder",
+       "published": "Thu, 12 Nov 2026 22:00:00 GMT"
+      },
+      {
+       "title": "\uff08\u682a\uff09\u65b0\u5ddd",
+       "url": "https://tavily.com/knowledge/company/osaxu2YDXLoH",
+       "published": null
+      }
+     ],
+     "at": "2026-11-14T22:17:13.949Z"
+    }
+   },
+   {
+    "id": "resonac",
+    "name": "Resonac",
+    "tier": 2,
+    "country": "JP",
+    "role": "Non-conductive film (NCF)",
+    "spof": true,
+    "monitored": true,
+    "news": {
+     "count": 5,
+     "items": [
+      {
+       "title": "Resonac Graphite Electrode Sale Reported",
+       "url": "https://note.com/asset_alive/n/n34bad7913cec?hl=en",
+       "published": null
+      },
+      {
+       "title": "Jukan on X: \"Korean media report that LG Chem has begun developing materials for mass reflow molded underfill (MR-MUF), a key process in high-bandwidth memory (HBM) manufacturing. The company has reportedly made significant technical progress in developing non-conductive film (NCF), with promising\u2026 / X",
+       "url": "https://x.com/jukan05/status/2120698252848963694",
+       "published": "Thu, 12 Nov 2026 02:00:38 GMT"
+      },
+      {
+       "title": "Top 10 Pre-applied Underfills for Semiconductors Market ...",
+       "url": "https://www.linkedin.com/pulse/top-10-pre-applied-underfills-semiconductors-market-leaders-q4kic",
+       "published": null
+      },
+      {
+       "title": "Resonac",
+       "url": "https://tavily.com/knowledge/company/rrCHNDwv18EM",
+       "published": null
+      },
+      {
+       "title": "88\u5104\u30c9\u30eb\u306e\u8cb7\u53ce\u304c\u5909\u3048\u305f\u30ec\u30be\u30ca\u30c3\u30af\uff1aAI\u30d6\u30fc\u30e0\u3078\u306e\u5bfe\u5fdc (How An $8.8 Billion Deal Transformed Resonac For The AI Boom)\u2503VoiceTube \u52d5\u753b\u3067\u82f1\u8a9e\u5b66\u7fd2",
+       "url": "https://jp.voicetube.com/videos/224076",
+       "published": "Sun, 08 Nov 2026 23:00:00 GMT"
+      }
+     ],
+     "at": "2026-11-14T22:17:13.949Z"
+    }
+   },
+   {
+    "id": "target",
+    "name": "MU \u00b7 HBM3E",
+    "tier": 0,
+    "country": "",
+    "role": "Micron HBM3E memory"
+   }
+  ],
+  "edges": [
+   {
+    "from": "micron-taiwan",
+    "to": "target",
+    "evidence": {
+     "quote": "Micron currently has its main HBM production base in Taiwan and is making expansion investments aimed at the fourth quarter of this year.",
+     "url": "https://biz.chosun.com/en/en-it/2025/04/14/K642QULNNJBUPLX4BLPMS2P6V4/",
+     "verified": true
+    }
+   },
+   {
+    "from": "micron-hiroshima",
+    "to": "target",
+    "evidence": {
+     "quote": "Its front-end manufacturing is strategically positioned in Japan, aligning with expansion plans for 1\u03b2 nm capacity.",
+     "url": "https://www.trendforce.com/news/2023/12/14/news-micron-to-launch-1%CE%B3-dram-in-2025-and-manufacture-hbm-in-japan/",
+     "verified": true
+    }
+   },
+   {
+    "from": "hanmi",
+    "to": "target",
+    "evidence": {
+     "quote": "Hanmi Semiconductor announced that it has secured a supply contract worth 22.6 billion KRW from the U.S. memory semiconductor company Micron Technology for the production of AI semiconductor high-bandwidth memory (HBM) using the \u2018Dual TC Bonder Griffin\u2019.",
+     "url": "https://www.asiae.co.kr/en/article/2024041109202470334",
+     "verified": true
+    }
+   },
+   {
+    "from": "shinkawa",
+    "to": "target",
+    "evidence": {
+     "quote": "According to the industry on the 14th, Micron has placed a large order for TC bonders, the key equipment for HBM production, from HANMI Semiconductor and Japan's Shinkawa.",
+     "url": "https://biz.chosun.com/en/en-it/2025/04/14/K642QULNNJBUPLX4BLPMS2P6V4/",
+     "verified": true
+    }
+   },
+   {
+    "from": "resonac",
+    "to": "target",
+    "evidence": {
+     "quote": "\uc8fc \uace0\uac1d\uc0ac\ub294 \uc0bc\uc131\uc804\uc790\uc640 \ub9c8\uc774\ud06c\ub860\uc774\ub2e4.",
+     "url": "https://www.etnews.com/20240417000037",
+     "verified": true
+    }
+   }
+  ]
+ },
+ "graph:NVDA-COWOS-L": {
+  "key": "NVDA-COWOS-L",
+  "label": "NVDA \u00b7 CoWoS-L",
+  "title": "NVDA \u00b7 Blackwell on CoWoS-L",
+  "source": "live",
+  "builtAt": "2026-11-14T20:43:08.929Z",
+  "nodes": [
+   {
+    "id": "tsmc",
+    "name": "TSMC",
+    "tier": 1,
+    "country": "TW",
+    "role": "Logic die and CoWoS-L packaging",
+    "ticker": "2330.TW",
+    "spof": true,
+    "monitored": false
+   },
+   {
+    "id": "ase",
+    "name": "ASE Technology Holding",
+    "tier": 1,
+    "country": "TW",
+    "role": "Wafer-on-substrate bonding",
+    "spof": false,
+    "monitored": false
+   },
+   {
+    "id": "skhynix",
+    "name": "SK hynix",
+    "tier": 2,
+    "country": "KR",
+    "role": "HBM3E memory stacks",
+    "ticker": "000660.KS",
+    "spof": false,
+    "monitored": true
+   },
+   {
+    "id": "ibiden",
+    "name": "Ibiden",
+    "tier": 2,
+    "country": "JP",
+    "role": "IC package substrates",
+    "spof": false,
+    "monitored": false
+   },
+   {
+    "id": "unimicron",
+    "name": "Unimicron",
+    "tier": 2,
+    "country": "TW",
+    "role": "IC package substrates",
+    "spof": false,
+    "monitored": false
+   },
+   {
+    "id": "disco",
+    "name": "Disco",
+    "tier": 2,
+    "country": "JP",
+    "role": "Dicing and grinding tools",
+    "ticker": "6146",
+    "spof": true,
+    "monitored": true
+   },
+   {
+    "id": "ajinomoto",
+    "name": "Ajinomoto",
+    "tier": 3,
+    "country": "JP",
+    "role": "ABF build-up film",
+    "spof": true,
+    "monitored": true
+   },
+   {
+    "id": "nittobo",
+    "name": "Nittobo",
+    "tier": 3,
+    "country": "JP",
+    "role": "T-glass fiber cloth",
+    "spof": true,
+    "monitored": true
+   },
+   {
+    "id": "target",
+    "name": "NVDA \u00b7 CoWoS-L",
+    "tier": 0,
+    "country": "",
+    "role": "NVDA \u00b7 Blackwell on CoWoS-L"
+   }
+  ],
+  "edges": [
+   {
+    "from": "tsmc",
+    "to": "target",
+    "evidence": {
+     "quote": "The Blackwell package is the first high volume design to be packaged with TSMC\u2019s CoWoS-L technology.",
+     "url": "https://newsletter.semianalysis.com/p/nvidias-blackwell-reworked-shipment",
+     "verified": true
+    }
+   },
+   {
+    "from": "ase",
+    "to": "target",
+    "evidence": {
+     "quote": "ASE handles wafer-on-substrate bonding, which accounts for roughly 15% of total backend processing steps.",
+     "url": "https://eastasiabrief.com/semiconductors/nvidia-aligns-tsmc-memory-makers-ease-20-packaging-shortfall-1256",
+     "verified": true
+    }
+   },
+   {
+    "from": "skhynix",
+    "to": "target",
+    "evidence": {
+     "quote": "South Korean memory producer SK hynix provides the primary volume of eight-stack HBM3E memory modules for the Blackwell platform.",
+     "url": "https://eastasiabrief.com/semiconductors/nvidia-aligns-tsmc-memory-makers-ease-20-packaging-shortfall-1256",
+     "verified": true
+    }
+   },
+   {
+    "from": "ibiden",
+    "to": "target",
+    "evidence": {
+     "quote": "Japanese substrate supplier Ibiden has committed dedicated production capacity from its domestic manufacturing lines.",
+     "url": "https://eastasiabrief.com/semiconductors/nvidia-aligns-tsmc-memory-makers-ease-20-packaging-shortfall-1256",
+     "verified": true
+    }
+   },
+   {
+    "from": "unimicron",
+    "to": "target",
+    "evidence": {
+     "quote": "The release says the agreements with Ibiden, Samsung Electro-Mechanics and Unimicron will, in aggregate, drive this increase, and that more are under way.",
+     "url": "https://www.mpbxchange.com/research/nvidia-substrate-capacity-ibiden-unimicron-samsung",
+     "verified": true
+    }
+   },
+   {
+    "from": "disco",
+    "to": "tsmc",
+    "evidence": {
+     "quote": "DISCO's core products are involved in every step of the process, including interposer processing, GPU die singulation, and HBM die thinning.",
+     "url": "https://note.com/lucky_bee22/n/n0771cbe1781c?hl=en",
+     "verified": true
+    }
+   },
+   {
+    "from": "ajinomoto",
+    "to": "ibiden",
+    "evidence": {
+     "quote": "Each substrate maker laminates its build-up layers using dielectric film supplied by Japan's Ajinomoto, which controls a reported 95% or more of the global market.",
+     "url": "https://www.tomshardware.com/tech-industry/semiconductors/the-state-of-abf-substrates-in-data-center-silicon-in-2026-solving-the-supply-crunch-and-material-wall-beneath-every-ai-accelerator",
+     "verified": true
+    }
+   },
+   {
+    "from": "ajinomoto",
+    "to": "unimicron",
+    "evidence": {
+     "quote": "Each substrate maker laminates its build-up layers using dielectric film supplied by Japan's Ajinomoto, which controls a reported 95% or more of the global market.",
+     "url": "https://www.tomshardware.com/tech-industry/semiconductors/the-state-of-abf-substrates-in-data-center-silicon-in-2026-solving-the-supply-crunch-and-material-wall-beneath-every-ai-accelerator",
+     "verified": true
+    }
+   },
+   {
+    "from": "nittobo",
+    "to": "target",
+    "evidence": {
+     "quote": "A Japanese company called Nittobo controls roughly 90% of the global supply of specialist glass-fiber cloth (T-glass), which sits inside every advanced AI chip package \u2014 and demand is now so high and supply so squeezed that it\u2019s causing issues.",
+     "url": "https://www.tomshardware.com/tech-industry/shortages-of-crucial-chip-packaging-material-threatens-ai-accelerator-supply-chains-nittobos-fukushima-plant-is-tripling-capacity-but-itll-take-years-before-market",
+     "verified": true
+    }
+   }
+  ]
+ },
+ "tick:NVDA-COWOS-L:tsmc": {
+  "graphKey": "NVDA-COWOS-L",
+  "nodeId": "tsmc",
+  "at": "2026-11-14T20:43:17.291Z",
+  "source": "live",
+  "latencyMs": 7750,
+  "credits": 1,
+  "candidates": 2,
+  "breached": false,
+  "events": [
+   {
+    "url": "https://cryptobriefing.com/tsmc-xintec-seven-year-cowos-deal",
+    "title": "TSMC signs seven-year deal with Xintec to expand CoWoS packaging",
+    "headline": "TSMC signs seven-year deal with affiliate Xintec to add CoWoS packaging capacity",
+    "published": "Fri, 13 Nov 2026 12:08:53 GMT",
+    "about": true,
+    "impact": {
+     "met": false,
+     "quote": "",
+     "verified": false
+    },
+    "credible": {
+     "met": false,
+     "reason": "Crypto-focused news site, not a primary source or established semiconductor trade or financial press."
+    },
+    "recent": {
+     "met": true,
+     "days": 1
+    },
+    "qualified": false
+   },
+   {
+    "url": "https://tavily.com/knowledge/company/qZQB4hLU2Cgt",
+    "title": "TSMC",
+    "headline": "Company profile page listing TSMC financials, headcount and web data",
+    "published": null,
+    "about": true,
+    "impact": {
+     "met": false,
+     "quote": "",
+     "verified": false
+    },
+    "credible": {
+     "met": false,
+     "reason": "Automated company-data aggregator profile, not news, primary source or trade press."
+    },
+    "recent": {
+     "met": false,
+     "days": null
+    },
+    "qualified": false
+   }
+  ]
+ },
+ "graph:TSMC": {
+  "key": "TSMC",
+  "label": "TSMC",
+  "title": "TSMC",
+  "source": "live",
+  "builtAt": "2026-11-14T21:40:18.374Z",
+  "nodes": [
+   {
+    "id": "asml",
+    "name": "ASML Holding N.V.",
+    "tier": 2,
+    "country": "NL",
+    "role": "Lithography systems",
+    "ticker": "ASML",
+    "spof": false,
+    "monitored": true
+   },
+   {
+    "id": "amat",
+    "name": "Applied Materials",
+    "tier": 2,
+    "country": "US",
+    "role": "Deposition/etch equipment",
+    "ticker": "AMAT",
+    "spof": false,
+    "monitored": true
+   },
+   {
+    "id": "lam",
+    "name": "Lam Research",
+    "tier": 2,
+    "country": "US",
+    "role": "Wafer fab equipment",
+    "ticker": "LRCX",
+    "spof": false,
+    "monitored": true
+   },
+   {
+    "id": "tel",
+    "name": "Tokyo Electron",
+    "tier": 2,
+    "country": "JP",
+    "role": "Wafer fab equipment",
+    "spof": false,
+    "monitored": true
+   },
+   {
+    "id": "globalwafers",
+    "name": "GlobalWafers",
+    "tier": 2,
+    "country": "TW",
+    "role": "Silicon wafers",
+    "spof": false,
+    "monitored": false
+   },
+   {
+    "id": "jsr",
+    "name": "JSR",
+    "tier": 3,
+    "country": "JP",
+    "role": "Photoresist",
+    "spof": false,
+    "monitored": false
+   },
+   {
+    "id": "shinetsu",
+    "name": "Shin-Etsu Chemical",
+    "tier": 3,
+    "country": "JP",
+    "role": "Litho materials/photoresist",
+    "spof": false,
+    "monitored": false
+   },
+   {
+    "id": "entegris",
+    "name": "Entegris",
+    "tier": 3,
+    "country": "US",
+    "role": "FOUPs, filters, materials",
+    "spof": false,
+    "monitored": false
+   },
+   {
+    "id": "target",
+    "name": "TSMC",
+    "tier": 0,
+    "country": "",
+    "role": "TSMC"
+   }
+  ],
+  "edges": [
+   {
+    "from": "asml",
+    "to": "target",
+    "evidence": {
+     "quote": "And we saw that TSMC was their largest customer, making up ~40% of ASML\u2019s revenues.",
+     "url": "https://www.thebusinessof.co/archive/asml-what-are-their-margins",
+     "verified": true
+    }
+   },
+   {
+    "from": "amat",
+    "to": "target",
+    "evidence": {
+     "quote": "In front-end wafer manufacturing, the sector is almost monopolized by five major players\u2014ASML, Applied Materials, Lam Research, Tokyo Electron (TEL), and KLA\u2014on which foundries such as TSMC, Samsung, Intel, and UMC are highly dependent.",
+     "url": "https://tspasemiconductor.substack.com/p/how-do-advanced-packaging-equipment",
+     "verified": true
+    }
+   },
+   {
+    "from": "lam",
+    "to": "target",
+    "evidence": {
+     "quote": "In front-end wafer manufacturing, the sector is almost monopolized by five major players\u2014ASML, Applied Materials, Lam Research, Tokyo Electron (TEL), and KLA\u2014on which foundries such as TSMC, Samsung, Intel, and UMC are highly dependent.",
+     "url": "https://tspasemiconductor.substack.com/p/how-do-advanced-packaging-equipment",
+     "verified": true
+    }
+   },
+   {
+    "from": "tel",
+    "to": "target",
+    "evidence": {
+     "quote": "In front-end wafer manufacturing, the sector is almost monopolized by five major players\u2014ASML, Applied Materials, Lam Research, Tokyo Electron (TEL), and KLA\u2014on which foundries such as TSMC, Samsung, Intel, and UMC are highly dependent.",
+     "url": "https://tspasemiconductor.substack.com/p/how-do-advanced-packaging-equipment",
+     "verified": true
+    }
+   },
+   {
+    "from": "globalwafers",
+    "to": "target",
+    "evidence": {
+     "quote": "GlobalWafers supplies silicon wafers to major chipmakers, including Taiwan Semiconductor Manufacturing Co (TSMC, \u53f0\u7a4d\u96fb).",
+     "url": "https://www.taipeitimes.com/News/biz/archives/2025/05/17/2003837011",
+     "verified": true
+    }
+   },
+   {
+    "from": "jsr",
+    "to": "target",
+    "evidence": {
+     "quote": "JSR's Taiwan plant will produce photoresist for TSMC, but in the longer term, the company will focus on metal oxide resist (MOR).",
+     "url": "https://www.tomshardware.com/tech-industry/jsr-builds-first-taiwan-photoresist-plant-as-japanese-materials-makers-race-to-embed-next-to-tsmc",
+     "verified": true
+    }
+   },
+   {
+    "from": "shinetsu",
+    "to": "target",
+    "evidence": {
+     "quote": "Shin-Etsu was particularly singled out by TSMC for its \u201cExcellent Technology Collaboration and Production Support in Litho Material.\u201d",
+     "url": "https://www.shinetsu.co.jp/en/news/news-release/shin-etsu-presented-with-2023-tsmc-excellent-performance-award/",
+     "verified": true
+    }
+   },
+   {
+    "from": "entegris",
+    "to": "target",
+    "evidence": {
+     "quote": "These internal transportation systems have dramatically enhanced the productivity of semiconductor manufacturing over the last two decades, with some of the world\u2019s largest chipmakers, like Intel, TSMC, Micron, and GlobalFoundries, being major customers for these carriers.",
+     "url": "https://www.nist.gov/news-events/news/2024/06/biden-harris-administration-announces-preliminary-terms-entegris-onshore",
+     "verified": true
+    }
+   }
+  ]
+ },
+ "monitor:MU-HBM3E:hanmi": {
+  "id": "929051b5-7679-48a9-8604-840c5936fe2e",
+  "query": "Hanmi Semiconductor (TC bonders for HBM) production disruption, outage, shortage, export restriction or delivery delay affecting Micron HBM3E",
+  "createdAt": "2026-11-14T21:52:41Z"
+ },
+ "monitor:MU-HBM3E:resonac": {
+  "id": "4ff331bf-f5db-41b0-b1ae-8e3e11037413",
+  "query": "Resonac (Non-conductive film (NCF)) production disruption, outage, shortage, export restriction or delivery delay affecting MU \u00b7 HBM3E",
+  "createdAt": "2026-11-14T21:59:41.441Z"
+ },
+ "graph:ASML-HIGHNA": {
+  "key": "ASML-HIGHNA",
+  "label": "ASML \u00b7 High-NA EUV",
+  "title": "ASML High-NA EUV lithography",
+  "source": "live",
+  "builtAt": "2026-11-14T22:13:36.652Z",
+  "nodes": [
+   {
+    "id": "zeiss-smt",
+    "name": "Carl Zeiss SMT GmbH",
+    "tier": 1,
+    "country": "DE",
+    "role": "EUV optics, optical columns",
+    "spof": true,
+    "monitored": false,
+    "news": {
+     "count": 1,
+     "items": [
+      {
+       "title": "ZEISS Semiconductor Manufacturing Technology",
+       "url": "https://tavily.com/knowledge/company/TnxlbyQ1xpFs",
+       "published": null
+      }
+     ],
+     "at": "2026-11-14T22:13:36.652Z"
+    }
+   },
+   {
+    "id": "trumpf",
+    "name": "TRUMPF",
+    "tier": 1,
+    "country": "DE",
+    "role": "CO2 drive laser",
+    "spof": false,
+    "monitored": false,
+    "news": {
+     "count": 4,
+     "items": [
+      {
+       "title": "CNC Laser Cutting Machine Trumpf TRUMATIC L3050",
+       "url": "https://www.werktuigen.com/trumpf-trumatic+l3050/wt-233-34800",
+       "published": "Fri, 13 Nov 2026 22:00:00 GMT"
+      },
+      {
+       "title": "Trumpf 2030 4kw fiber laser delivered in Toronto",
+       "url": "https://www.facebook.com/laserservicesolution/posts/trumpf-2030-4kw-fiber-solddeliveredtrumpf-bystronic-mazakoptonics-laserserviceso/1752860583513130",
+       "published": null
+      },
+      {
+       "title": "TRUMPF",
+       "url": "https://tavily.com/knowledge/company/jffMP1cP0iRC",
+       "published": null
+      },
+      {
+       "title": "CO2 Galvo Laser Machine Market: Strategic Growth Analysis",
+       "url": "https://www.linkedin.com/pulse/co2-galvo-laser-machine-market-strategic-growth-analysis-gpgqf",
+       "published": null
+      }
+     ],
+     "at": "2026-11-14T22:13:36.652Z"
+    }
+   },
+   {
+    "id": "cymer",
+    "name": "ASML Cymer (San Diego)",
+    "tier": 1,
+    "country": "US",
+    "role": "EUV light source",
+    "spof": true,
+    "monitored": false,
+    "news": {
+     "count": 1,
+     "items": [
+      {
+       "title": "ASML",
+       "url": "https://tavily.com/knowledge/company/Ibn4Y6vGt5Dk",
+       "published": null
+      }
+     ],
+     "at": "2026-11-14T22:13:36.652Z"
+    }
+   },
+   {
+    "id": "asml-berlin",
+    "name": "ASML Berlin (Berliner Glas)",
+    "tier": 1,
+    "country": "DE",
+    "role": "Wafer tables, clamps, chucks",
+    "spof": false,
+    "monitored": false,
+    "news": {
+     "count": 2,
+     "items": [
+      {
+       "title": "ASML",
+       "url": "https://tavily.com/knowledge/company/Ibn4Y6vGt5Dk",
+       "published": null
+      },
+      {
+       "title": "GS Markets",
+       "url": "https://www.gs.de/de/produkte/hebelprodukte/long-short-knock-outs/ibm/DE000DN5C9X7",
+       "published": null
+      }
+     ],
+     "at": "2026-11-14T22:13:36.652Z"
+    }
+   },
+   {
+    "id": "ii-vi",
+    "name": "II-VI Incorporated (Coherent)",
+    "tier": 2,
+    "country": "US",
+    "role": "CVD diamond laser windows",
+    "ticker": "IIVI",
+    "spof": false,
+    "monitored": true,
+    "news": {
+     "count": 2,
+     "items": [
+      {
+       "title": "Coherent\u00ae Optical Grade Polycrystalline CVD Diamond Windows",
+       "url": "https://www.edmundoptics.com/f/coherent-optical-grade-polycrystalline-cvd-diamond-windows/39550",
+       "published": null
+      },
+      {
+       "title": "that matter. - Investor Relations | Coherent Corp.",
+       "url": "https://ir.coherent.com/static-files/577b1933-c90b-438d-96c8-b76b10a9b214",
+       "published": null
+      }
+     ],
+     "at": "2026-11-14T22:13:36.652Z"
+    }
+   },
+   {
+    "id": "target",
+    "name": "ASML \u00b7 High-NA EUV",
+    "tier": 0,
+    "country": "",
+    "role": "ASML High-NA EUV lithography"
+   }
+  ],
+  "edges": [
+   {
+    "from": "zeiss-smt",
+    "to": "target",
+    "evidence": {
+     "quote": "Based on the 24.9 percent investment and our relationship with Carl Zeiss SMT GmbH being our single supplier of optical columns essential to our chip-making systems, Carl Zeiss SMT Holding GmbH & Co. KG and its subsidiaries are considered related parties of ASML as of June 29, 2017.",
+     "url": "https://www.sec.gov/Archives/edgar/data/937966/000093796619000007/R40.htm",
+     "verified": true
+    }
+   },
+   {
+    "from": "trumpf",
+    "to": "target",
+    "evidence": {
+     "quote": "The first new high-energy lasers are scheduled to be delivered to ASML in 2026.",
+     "url": "https://www.trumpf.com/en_US/newsroom/global-press-releases/press-release-detail-page/release/asml-honors-trumpf-for-new-euv-laser-9838/",
+     "verified": true
+    }
+   },
+   {
+    "from": "cymer",
+    "to": "target",
+    "evidence": {
+     "quote": "Every major module has one supplier, and two of them are in the United States: the light source, from the Cymer business ASML bought for about $2.5 billion in 2013, and the reticle stage.",
+     "url": "https://semiconductorx.com/wfe-asml-euv.php",
+     "verified": true
+    }
+   },
+   {
+    "from": "asml-berlin",
+    "to": "target",
+    "evidence": {
+     "quote": "Several key components for our lithography systems are developed and produced here, including wafer tables and clamps, reticle chucks and mirror blocks.",
+     "url": "https://www.asml.com/en/company/about-asml/locations/berlin",
+     "verified": true
+    }
+   },
+   {
+    "from": "ii-vi",
+    "to": "trumpf",
+    "evidence": {
+     "quote": "\u201cII-VI is a strategic supplier of high performance CVD diamond windows for our high power CO2 laser systems that enable EUV lithography,\u201d said Dr. Michael von Borstel, President and CEO, TRUMPF Lasersystems for Semiconductor Manufacturing GmbH.",
+     "url": "https://www.globenewswire.com/news-release/2018/12/19/1669962/11543/en/ii-vi-incorporated-expands-manufacturing-capacity-of-diamond-windows-for-trumpf-high-power-co2-lasers-in-euv-lithography.html",
+     "verified": true
+    }
+   }
+  ]
+ },
+ "tick:MU-HBM3E:micron-taiwan": {
+  "graphKey": "MU-HBM3E",
+  "nodeId": "micron-taiwan",
+  "at": "2026-11-14T22:17:49.272Z",
+  "source": "live",
+  "latencyMs": 14452,
+  "credits": 1,
+  "candidates": 6,
+  "breached": false,
+  "events": [
+   {
+    "url": "https://finance.biggo.com/news/da7430bd-2ba6-41d4-a237-27b780ddb0da",
+    "title": "Micron Halts Construction of approximately $4.4 Billion HBM Plant in Taiwan Amid Labor Dispute \u2014 BigGo Finance",
+    "headline": "Micron reportedly halts Fab 11E HBM plant construction in Taoyuan over union dispute",
+    "published": "Fri, 06 Nov 2026 06:05:42 GMT",
+    "about": true,
+    "impact": {
+     "met": false,
+     "quote": "",
+     "verified": false
+    },
+    "credible": {
+     "met": false,
+     "reason": "BigGo Finance is a news aggregator relaying a Bloomberg report, not a primary source."
+    },
+    "recent": {
+     "met": true,
+     "days": 8
+    },
+    "qualified": false
+   },
+   {
+    "url": "https://finance.biggo.com/news/3994e4e3-90f8-40d5-b47b-903bc10289a1",
+    "title": "Micron Opens Advanced Packaging Plant in Taiwan; 2027 HBM Capacity Fully Sold Out \u2014 BigGo Finance",
+    "headline": "Micron opens AATT2 HBM packaging plant in Taichung; 2027 capacity sold out",
+    "published": "Fri, 16 Oct 2026 09:26:50 GMT",
+    "about": true,
+    "impact": {
+     "met": false,
+     "quote": "",
+     "verified": false
+    },
+    "credible": {
+     "met": false,
+     "reason": "BigGo Finance is a news aggregator, not primary or established trade press."
+    },
+    "recent": {
+     "met": true,
+     "days": 29
+    },
+    "qualified": false
+   },
+   {
+    "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262224903-micron-taiwan-employees-strike-oct-22-15-percent-profit-sharing-dispute-tradingkey",
+    "title": "Micron Taiwan Employees to Strike Oct. 22 as 15% Profit Distribution Dispute Draws Attention",
+    "headline": "Micron Taoyuan union plans Oct. 22 solidarity strike over 15% profit-sharing demand",
+    "published": "Mon, 19 Oct 2026 00:00:00 GMT",
+    "about": true,
+    "impact": {
+     "met": false,
+     "quote": "",
+     "verified": false
+    },
+    "credible": {
+     "met": false,
+     "reason": "TradingKey is an AI-translated, AI-summarized investment content site, not established press."
+    },
+    "recent": {
+     "met": true,
+     "days": 26
+    },
+    "qualified": false
+   },
+   {
+    "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279296",
+    "title": "Micron's Taiwan Plant Faces Oct. 22 Strike Over Profit-Sharing Dispute - Businesskorea",
+    "headline": "Micron Taiwan faces Oct. 22 warning strike in profit-sharing dispute",
+    "published": "Wed, 21 Oct 2026 01:39:07 GMT",
+    "about": true,
+    "impact": {
+     "met": false,
+     "quote": "",
+     "verified": false
+    },
+    "credible": {
+     "met": true,
+     "reason": "BusinessKorea is an established business publication citing Reuters and Taiwan's CNA."
+    },
+    "recent": {
+     "met": true,
+     "days": 24
+    },
+    "qualified": false
+   },
+   {
+    "url": "https://www.tradingview.com/news/gurufocus:49a260181094b:0-micron-s-bold-memory-expansion-faces-a-sudden-crisis",
+    "title": "Micron's Bold Memory Expansion Faces a Sudden Crisis \u2014 TradingView News",
+    "headline": "Micron reportedly suspends Taiwan Fab 11E build amid labor dispute; output normal",
+    "published": "Thu, 05 Nov 2026 17:14:46 GMT",
+    "about": true,
+    "impact": {
+     "met": false,
+     "quote": "",
+     "verified": false
+    },
+    "credible": {
+     "met": false,
+     "reason": "GuruFocus opinion piece syndicated on TradingView, an aggregator, rehashing Bloomberg."
+    },
+    "recent": {
+     "met": true,
+     "days": 9
+    },
+    "qualified": false
+   },
+   {
+    "url": "https://www.techtimes.com/articles/329105/20261016/micron-opens-hbm-plant-2027-output-fully-contracted-strike-vote-looms.htm",
+    "title": "Micron Opens HBM Plant With 2027 Output Fully Contracted; Strike Vote Looms",
+    "headline": "Micron opens second Taichung HBM packaging plant with 2027 output fully contracted",
+    "published": "Fri, 16 Oct 2026 05:54:44 GMT",
+    "about": true,
+    "impact": {
+     "met": false,
+     "quote": "",
+     "verified": false
+    },
+    "credible": {
+     "met": false,
+     "reason": "Tech Times is a general tech news/SEO-oriented site, not established trade press."
+    },
+    "recent": {
+     "met": true,
+     "days": 29
+    },
+    "qualified": false
+   }
+  ]
+ }
+}
