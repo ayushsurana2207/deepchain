@@ -17,7 +17,7 @@ const SUGGESTIONS = [
   { label: "MU · HBM3E", target: "Micron HBM3E memory", key: "MU-HBM3E" },
   { label: "NVDA · Blackwell", target: "NVIDIA Blackwell on CoWoS-L", key: "NVDA-COWOS-L" },
   { label: "INTC · Xeon", target: "Intel Xeon server CPUs (Granite Rapids)", key: "INTC-XEON" },
-  { label: "DELL · AI servers", target: "Dell PowerEdge AI servers", key: "DELL-AI-SERVERS" },
+  { label: "DELL · AI servers", target: "Dell PowerEdge XE9680 AI server: GPUs, HBM memory, server PCBs and motherboards", key: "DELL-AI-SERVERS" },
   { label: "ASML · High-NA EUV", target: "ASML High-NA EUV lithography", key: "ASML-HIGHNA" },
 ];
 
@@ -259,6 +259,10 @@ export default function Workbench({ recent, email, signOut }: { recent: Graph[];
           onSuggest={(s) => search(s.target, s.key, s.label)}
           recent={graphs}
           onOpen={open}
+          onRemove={async (k) => {
+            const r = await fetch(`/api/graphs?key=${encodeURIComponent(k)}`, { method: "DELETE" });
+            if (r.ok) setGraphs((gs) => gs.filter((x) => x.key !== k));
+          }}
         />
       )}
 
@@ -477,7 +481,7 @@ function SearchForm({
 }
 
 function EmptyState({
-  query, setQuery, onSearch, onSuggest, recent, onOpen,
+  query, setQuery, onSearch, onSuggest, recent, onOpen, onRemove,
 }: {
   query: string;
   setQuery: (q: string) => void;
@@ -485,6 +489,7 @@ function EmptyState({
   onSuggest: (s: (typeof SUGGESTIONS)[number]) => void;
   recent: Graph[];
   onOpen: (g: Graph) => void;
+  onRemove: (key: string) => void;
 }) {
   return (
     <main className="flex flex-1 flex-col items-center px-4 py-16 sm:py-24">
@@ -514,8 +519,8 @@ function EmptyState({
             <h2 className="text-sm font-semibold">Recent searches</h2>
             <ul className="mt-3 flex flex-col divide-y divide-line rounded-lg border border-line bg-card">
               {recent.map((r) => (
-                <li key={r.key}>
-                  <button onClick={() => onOpen(r)} className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left hover:bg-paper">
+                <li key={r.key} className="flex items-center">
+                  <button onClick={() => onOpen(r)} className="flex min-w-0 flex-1 items-center justify-between gap-4 px-4 py-3 text-left hover:bg-paper">
                     <span>
                       <span className="block text-sm font-medium">{r.title}</span>
                       <span className="block text-xs text-muted">
@@ -523,6 +528,13 @@ function EmptyState({
                       </span>
                     </span>
                     <span className="shrink-0 text-xs text-muted">{fmtUTC(r.builtAt)}</span>
+                  </button>
+                  <button
+                    onClick={() => onRemove(r.key)}
+                    aria-label={`Remove ${r.title} from recent searches`}
+                    className="mr-2 h-8 shrink-0 rounded px-2 text-xs text-muted hover:bg-paper hover:text-risk-ink"
+                  >
+                    Remove
                   </button>
                 </li>
               ))}

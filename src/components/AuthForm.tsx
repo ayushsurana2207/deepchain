@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { useActionState } from "react";
-import { signInAction, signUpAction, type AuthState } from "@/app/(auth)/actions";
+import { demoSignInAction, signInAction, signUpAction, type AuthState } from "@/app/(auth)/actions";
 
 const input =
   "h-11 w-full rounded-md border border-line-strong bg-card px-3 text-[15px] text-ink outline-none transition-colors placeholder:text-muted/70 focus:border-ink focus:ring-2 focus:ring-amber/40";
 
-export default function AuthForm({ mode }: { mode: "signin" | "signup" }) {
+export default function AuthForm({ mode, demo = false }: { mode: "signin" | "signup"; demo?: boolean }) {
   const signup = mode === "signup";
   const [state, action, pending] = useActionState<AuthState, FormData>(signup ? signUpAction : signInAction, {});
 
@@ -70,6 +70,8 @@ export default function AuthForm({ mode }: { mode: "signin" | "signup" }) {
         </button>
       </form>
 
+      {demo && <DemoButton />}
+
       <p className="mt-6 text-sm text-muted">
         {signup ? "Already have an account? " : "New to Deepchain? "}
         <Link href={signup ? "/signin" : "/signup"} className="font-medium text-ink underline decoration-amber decoration-2 underline-offset-4">
@@ -77,5 +79,21 @@ export default function AuthForm({ mode }: { mode: "signin" | "signup" }) {
         </Link>
       </p>
     </div>
+  );
+}
+
+export function DemoButton({ label = "Explore with the demo account" }: { label?: string }) {
+  return (
+    <form action={demoSignInAction} className="mt-6">
+      <div className="mb-4 flex items-center gap-3 text-xs text-muted">
+        <span className="h-px flex-1 bg-line" />
+        or
+        <span className="h-px flex-1 bg-line" />
+      </div>
+      <button className="inline-flex h-11 w-full items-center justify-center rounded-md border border-amber bg-amber-tint font-medium text-ink transition-colors hover:bg-amber">
+        {label}
+      </button>
+      <p className="mt-2 text-center text-xs text-muted">No sign-up needed. Made for hackathon judges.</p>
+    </form>
   );
 }

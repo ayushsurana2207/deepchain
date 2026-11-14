@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import AuthForm from "@/components/AuthForm";
-import { getCurrentUser, signupOpen } from "@/lib/auth";
+import { demoAvailable, getCurrentUser, signupOpen } from "@/lib/auth";
 
 export const metadata = { title: "Create account · Deepchain" };
 
@@ -24,5 +24,5 @@ export default async function SignUp() {
         </div>
       </div>
     );
-  return <AuthForm mode="signup" />;
+  return <AuthForm mode="signup" demo={demoAvailable()} />;
 }

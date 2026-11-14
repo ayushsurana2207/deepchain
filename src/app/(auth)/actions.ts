@@ -38,6 +38,15 @@ export async function signInAction(_: AuthState, fd: FormData): Promise<AuthStat
   redirect("/app");
 }
 
+/** One-click sign-in to the shared demo account (credentials stay on the server). */
+export async function demoSignInAction() {
+  const email = process.env.DEMO_EMAIL, password = process.env.DEMO_PASSWORD;
+  const user = email && password ? await verifyLogin(email, password) : null;
+  if (!user) redirect("/signin");
+  await startSession(user.id);
+  redirect("/app");
+}
+
 export async function signOutAction() {
   await endSession();
   redirect("/");

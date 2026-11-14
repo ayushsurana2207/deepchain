@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { demoSignInAction } from "@/app/(auth)/actions";
 import ContactForm from "@/components/ContactForm";
 import HeroGraph from "@/components/HeroGraph";
 import Logo from "@/components/Logo";
@@ -137,12 +138,11 @@ export default function Landing() {
             >
               Trace your first chain
             </Link>
-            <a
-              href="#contact"
-              className="inline-flex h-11 items-center rounded-md border border-line-strong bg-card px-5 font-medium text-ink transition-colors hover:border-ink"
-            >
-              Talk to us
-            </a>
+            <form action={demoSignInAction}>
+              <button className="inline-flex h-11 items-center rounded-md border border-line-strong bg-card px-5 font-medium text-ink transition-colors hover:border-ink">
+                Try the live demo
+              </button>
+            </form>
           </div>
           <p className="mt-8 text-xs text-muted">Built on Telem and Tavily</p>
         </Reveal>

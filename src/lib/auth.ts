@@ -65,6 +65,7 @@ export async function createUser(name: string, email: string, password: string):
 }
 
 export const signupOpen = () => process.env.ALLOW_SIGNUP === "true";
+export const demoAvailable = () => !!(process.env.DEMO_EMAIL && process.env.DEMO_PASSWORD);
 
 /** Shared demo login for judges: created on first sign-in from DEMO_EMAIL / DEMO_PASSWORD env vars. */
 async function ensureDemoUser(email: string, password: string) {
